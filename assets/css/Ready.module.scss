@@ -1,0 +1,120 @@
+.ready-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.ready-inner {
+    height: 428px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 48px;
+    color: #fff;
+    padding: 56px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        max-width: 623px;
+        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        backdrop-filter: blur(4px);
+    }
+}
+
+.ready-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    .img-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.ready-row {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+
+    .ready-content-dv {
+        max-width: 420px;
+        display: grid;
+        gap: 16px;
+
+        h2,
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.ready-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        i {
+            display: inline-flex;
+            font-size: 22px;
+            line-height: 1;
+        }
+    }
+}
+
+.ready-left-dv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    gap: 24px;
+}
+
+.btn-secondary {
+    border-color: rgba(0, 0, 0, 0.36);
+    background-color: rgba(0, 0, 0, 0.36);
+}
+
+.row-card-list {
+    display: grid;
+    gap: 24px;
+    margin-top: auto;
+
+    .card-white-list {
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        background-color: #fff;
+        color: var(--darkColor);
+        padding: 8px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        width: fit-content;
+
+        i {
+            font-size: 20px;
+            color: var(--primaryColor);
+        }
+    }
+}
