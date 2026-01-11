@@ -2,6 +2,11 @@
   background: linear-gradient(180deg, rgba(242, 230, 222, 0) 0%, #F2E6DE 100%);
   width: 100%;
   padding: 80px 0 48px;
+  overflow: hidden;
+
+  @media (max-width: 1200px) {
+    padding: 60px 0 36px;
+  }
 }
 
 .top-section {
@@ -10,6 +15,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 48px;
+
+  @media (max-width: 1200px) {
+    padding-bottom: 36px;
+  }
 }
 
 .logo-section {
@@ -27,6 +36,16 @@
     max-width: 256px;
     height: 64px;
     object-fit: contain;
+
+    @media (max-width: 1200px) {
+      max-width: 150px;
+      height: 37px;
+    }
+
+    @media (max-width: 767px) {
+      max-width: 120px;
+      height: 32px;
+    }
   }
 }
 
@@ -36,8 +55,12 @@
     flex-wrap: wrap;
     gap: 16px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1200px) {
       gap: 12px;
+    }
+
+    @media (max-width: 767px) {
+      gap: 8px;
     }
   }
 
@@ -58,6 +81,11 @@
       background-color: var(--primaryColor);
       color: var(--whiteColor);
     }
+
+    @media (max-width: 1200px) {
+      width: 36px;
+      height: 36px;
+    }
   }
 }
 
@@ -66,6 +94,16 @@
   grid-template-columns: calc(100% - 510px) 486px;
   gap: 24px;
   padding-bottom: 48px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: calc(100% - 376px) 360px;
+    gap: 16px;
+    padding-bottom: 36px;
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .links-section {
@@ -73,6 +111,26 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
   max-width: 700px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 0.75fr 0.75fr 1.5fr;
+    gap: 16px;
+    max-width: 600px;
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    >div:nth-child(3) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
 }
 
 .link-column {
@@ -83,6 +141,11 @@
     color: #66698A;
     font-family: var(--font-manrope);
     margin-bottom: 20px;
+
+    @media (max-width: 1200px) {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
   }
 
   ul {
@@ -92,6 +155,10 @@
 
     li {
       margin-bottom: 16px;
+
+      @media (max-width: 1200px) {
+        margin-bottom: 12px;
+      }
 
       a {
         color: var(--darkColor);
@@ -110,6 +177,10 @@
           line-height: 1;
           color: #66698A;
           transition: all 0.3s;
+
+          @media (max-width: 1200px) {
+            font-size: 20px;
+          }
         }
 
         &:hover {
@@ -118,6 +189,10 @@
           i {
             color: var(--primaryColor);
           }
+        }
+
+        @media (max-width: 1200px) {
+          font-size: 14px;
         }
       }
     }
@@ -132,6 +207,11 @@
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   width: 100%;
+
+  @media (max-width: 1200px) {
+    padding: 16px;
+    gap: 16px;
+  }
 
   h4 {
     color: var(--darkColor);
@@ -157,6 +237,10 @@
   flex-wrap: wrap;
   gap: 24px;
 
+  @media (max-width: 1200px) {
+    gap: 12px;
+  }
+
   .newsletter-input-dv {
     flex: 1;
   }
@@ -172,14 +256,14 @@
   border-top: 2px dashed #A7A9BC;
 
   @media (max-width: 1024px) {
-    flex-direction: column;
-    gap: 15px;
-    padding-top: 20px;
+    gap: 24px;
+    padding-top: 24px;
   }
 
   @media (max-width: 767px) {
-    gap: 12px;
-    padding-top: 15px;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 20px;
   }
 }
 
@@ -188,6 +272,10 @@
   line-height: 1.5;
   font-weight: 500;
   color: var(--darkColor);
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .legal-links-list {
@@ -196,6 +284,10 @@
   column-gap: 38px;
   padding: 0;
   margin: 0;
+
+  @media (max-width: 1200px) {
+    column-gap: 20px;
+  }
 
   li {
     position: relative;
@@ -210,6 +302,12 @@
       left: -21px;
       top: 50%;
       transform: translateY(-50%);
+
+      @media (max-width: 1200px) {
+        left: -11px;
+        width: 4px;
+        height: 4px;
+      }
     }
 
     a {
@@ -221,6 +319,10 @@
 
       &:hover {
         color: var(--primaryColor);
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 12px;
       }
     }
 

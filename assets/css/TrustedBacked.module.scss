@@ -1,6 +1,15 @@
 .trusted-backed-section {
     position: relative;
+    overflow: hidden;
     padding: 80px 0;
+
+    @media (max-width:1200px) {
+        padding: 60px 0;
+    }
+
+    @media (max-width:767px) {
+        padding: 50px 0;
+    }
 }
 
 .trusted-backed-inner {
@@ -8,6 +17,15 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 24px;
+
+    @media (max-width:1200px) {
+        grid-template-columns: 270px auto;
+    }
+
+    @media (max-width:767px) {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
 }
 
 .trusted-card {
@@ -33,6 +51,14 @@
             margin: 0;
         }
     }
+
+    @media (max-width:1200px) {
+        max-width: 270px;
+    }
+
+    @media (max-width:767px) {
+        max-width: 100%;
+    }
 }
 
 .tb-root {
@@ -40,6 +66,15 @@
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     gap: 24px;
+
+    @media (max-width:1200px) {
+        gap: 12px;
+    }
+
+    @media (max-width:992px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
 }
 
 .tb-card {
@@ -49,7 +84,7 @@
     height: 100%;
     position: relative;
     padding-left: 24px;
-    grid: 24px;
+    gap: 24px;
     border-left: 2px solid #ECECF0;
 
     h3 {
@@ -58,6 +93,15 @@
         line-height: 48px;
         color: var(--darkColor);
         font-weight: 700;
+
+        @media (max-width:1200px) {
+            font-size: 28px;
+            line-height: 1.2;
+        }
+        
+        @media (max-width:992px) {
+            font-size: 24px;
+        }
     }
 
     .tb-top-card {
@@ -73,6 +117,11 @@
             object-fit: contain;
             width: 64px;
             height: 64px;
+
+            @media (max-width:1200px) {
+                width: 48px;
+                height: 48px;
+            }
         }
 
         p {
@@ -80,6 +129,19 @@
             line-height: 24px;
             font-weight: 500;
             margin: 0;
+
+            @media (max-width:1200px) {
+                font-size: 16px;
+                line-height: 1.2;
+            }
         }
+
+        @media (max-width:1200px) {
+            gap: 12px;
+        }
+    }
+
+    @media (max-width:1200px) {
+        padding-left: 12px;
     }
 }

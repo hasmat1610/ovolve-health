@@ -44,7 +44,7 @@ const Header = () => {
 
             <div className={styles['nav-m-bar']}>
               <button onClick={openNav} className={styles.opennav}>
-                <i className="menu-bars menu-icon fas fa-bars"></i> Menu
+                <i className={`menu-bars menu-icon icon-menu`}></i>
               </button>
             </div>
 
@@ -52,7 +52,7 @@ const Header = () => {
               className={`${styles['nav-div']} ${isNavOpen ? styles.open : ''}`} 
               id="mySidenav"
             >
-              <button className={styles.closebtn} onClick={closeNav}>&times;</button>
+              <button className={styles.closebtn} onClick={closeNav}><i className='icon-cross'></i></button>
 
               <div className={styles['row-nav-div']}>
                 <div className={styles['left-side']}>

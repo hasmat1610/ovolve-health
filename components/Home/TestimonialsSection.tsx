@@ -66,9 +66,13 @@ const TestimonialsSection = () => {
               },
               768: {
                 slidesPerView: 2,
-                spaceBetween: 30,
+                spaceBetween: 24,
               },
-              1024: {
+              992: {
+                slidesPerView: 2.25,
+                spaceBetween: 24,
+              },
+              1025: {
                 slidesPerView: 2.25,
                 spaceBetween: 40,
               },

@@ -27,7 +27,7 @@ const HeroSection = () => {
 
                         <div className={heroStyle['herocontentInner']}>
                             <h1>
-                                Understand Your Fertility Intelligence
+                                Understand Your <br /> Fertility Intelligence
                             </h1>
 
                             <p>

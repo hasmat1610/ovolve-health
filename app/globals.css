@@ -62,8 +62,9 @@ body {
 }
 
 .container {
-  max-width: 1320px;
   --bs-gutter-x: 24px;
+  max-width: 1344px;
+  padding-inline: 24px;
 }
 
 .bg-gradient-brand {
@@ -353,4 +354,121 @@ h6 {
 
 .form-control:-moz-placeholder {
   color: #A7A9BC;
+}
+
+@media (max-width:1200px) {
+  h1 {
+    font-size: 56px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width:992px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  h1 {
+    font-size: 52px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width:767px) {
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .btn.btn-h48 {
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 40px;
+    padding-inline: 16px;
+    border-radius: 12px;
+  }
+
+  .faq-root button.accordion-button {
+    font-size: 14px;
+    padding: 16px;
+    padding-bottom: 8px;
+  }
+
+  .faq-root button.accordion-button.collapsed {
+    padding-bottom: 16px;
+  }
+
+  .faq-root .accordion-body {
+    padding: 0 16px 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .faq-root .accordion-button:after {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .form-control {
+    min-height: 40px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
 }

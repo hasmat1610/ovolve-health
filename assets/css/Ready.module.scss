@@ -22,6 +22,29 @@
         max-width: 623px;
         background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
         backdrop-filter: blur(4px);
+
+        @media (max-width:992px) {
+            max-width: 400px;
+            backdrop-filter: blur(3px);
+        }
+    }
+
+    @media (max-width:1200px) {
+        height: 360px;
+        border-radius: 24px;
+        padding: 36px;
+    }
+
+    @media (max-width:992px) {
+        height: 360px;
+        border-radius: 24px;
+        padding: 24px;
+    }
+
+    @media (max-width:767px) {
+        height: auto;
+        border-radius: 24px;
+        padding: 24px;
     }
 }
 
@@ -65,6 +88,19 @@
     flex-wrap: wrap;
     gap: 32px;
 
+    @media (max-width:1200px) {
+        gap: 24px;
+    }
+
+    @media (max-width:992px) {
+        gap: 16px;
+    }
+
+    @media (max-width:767px) {
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
     a {
         display: inline-flex;
         align-items: center;
@@ -74,6 +110,10 @@
             display: inline-flex;
             font-size: 22px;
             line-height: 1;
+        }
+
+        @media (max-width:767px) {
+            width: 100%;
         }
     }
 }
@@ -85,6 +125,10 @@
     height: 100%;
     flex: 1;
     gap: 24px;
+
+    @media (max-width:767px) {
+        gap: 16px;
+    }
 }
 
 .btn-secondary {
@@ -96,6 +140,11 @@
     display: grid;
     gap: 24px;
     margin-top: auto;
+
+    @media (max-width:767px) {
+        gap: 12px;
+        width: 100%;
+    }
 
     .card-white-list {
         display: inline-flex;
@@ -111,6 +160,10 @@
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
         border-radius: 12px;
         width: fit-content;
+
+        @media (max-width:767px) {
+            width: 100%;
+        }
 
         i {
             font-size: 20px;
