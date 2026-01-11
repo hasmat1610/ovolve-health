@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import type { Metadata } from "next";
 import { Manrope, Instrument_Serif } from "next/font/google";
 import Header from "@/components/Header";
+import Footer from '@/components/Footer';
 import "@/assets/fonts/icomoon/style.css";
 import "@/app/globals.css";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -9,7 +9,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 48px;
-    color: #fff;
+    color: var(--whiteColor);
     padding: 56px;
 
     &::before {
@@ -105,7 +105,7 @@
         font-size: 14px;
         line-height: 20px;
         font-weight: 600;
-        background-color: #fff;
+        background-color: var(--whiteColor);
         color: var(--darkColor);
         padding: 8px;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);

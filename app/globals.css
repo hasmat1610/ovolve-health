@@ -7,15 +7,11 @@
   --bs-dark: #23253C;
   --bs-light: #F1F2FF;
   --bs-danger: #936A6A;
-  /* Mapping Dusty Rose to Danger */
   --bs-info: #40436D;
-  /* Mapping Dark Slate to Info */
 
-  /* Body Background Override */
-  --bs-body-bg: #F9F4F0;
+  --bs-body-bg: #fff;
   --bs-body-color: #23253C;
 
-  /* Custom CSS Variables for Project */
   --primaryColor: #737FFF;
   --secondaryColor: #66698A;
   --darkColor: #23253C;
@@ -56,13 +52,13 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  background-color: #fff;
+  background-color: var(--whiteColor);
   scroll-behavior: smooth;
   font-family: var(--font-manrope), var(--font-instrument-serif), Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   font-size: 16px;
   line-height: 1.5;
-  color: #66698A;
+  color: var(--secondaryColor);
 }
 
 .container {
@@ -250,6 +246,111 @@ h6 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+}
 
+.text-red {
+  color: #FF6262;
+}
 
+.faq-root h2.accordion-header {
+  line-height: 1;
+}
+
+.faq-root button.accordion-button {
+  padding: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--font-manrope);
+  background: var(--lightColor);
+  box-shadow: none;
+  transition: all 0.3s ease !important;
+  padding-bottom: 18px;
+}
+
+.faq-root button.accordion-button.collapsed {
+  padding-bottom: 24px;
+  background: var(--whiteColor);
+}
+
+.faq-root .accordion-collapse {
+  background: var(--whiteColor);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-root .accordion-collapse.collapsing,
+.faq-root .accordion-collapse.collapse.show {
+  background: var(--lightColor);
+}
+
+.faq-root .accordion-body {
+  padding: 0 24px 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondaryColor);
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease 0.1s;
+}
+
+.faq-root .accordion-collapse.show .accordion-body {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faq-root .accordion-button:after {
+  content: "\e914";
+  background: var(--darkColor);
+  color: var(--whiteColor);
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  font-family: 'icomoon' !important;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.faq-root button.accordion-button.collapsed:after {
+  content: "\e917";
+  color: var(--darkColor);
+  background: #ECECF0;
+  transform: rotate(0deg);
+}
+
+.faq-root button.accordion-button:not(.collapsed):after {
+  transform: rotate(180deg);
+}
+
+.form-control {
+  color: var(--darkColor);
+  padding: 8px 16px;
+  border: 1px solid #ECECF0;
+  border-radius: 16px;
+  min-height: 48px;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primaryColor);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #A7A9BC;
+}
+
+.form-control::-moz-placeholder {
+  color: #A7A9BC;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #A7A9BC;
+}
+
+.form-control:-moz-placeholder {
+  color: #A7A9BC;
 }

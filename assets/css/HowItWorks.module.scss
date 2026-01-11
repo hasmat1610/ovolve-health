@@ -41,11 +41,11 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: #fff;
+            color: var(--whiteColor);
             font-weight: 600;
             font-size: 24px;
             line-height: 1;
-            background-color: #40436D;
+            background-color: var(--infoColor);
         }
 
         &::before {
