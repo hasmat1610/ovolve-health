@@ -63,9 +63,13 @@ const FAQSection = () => {
   const rightColumnData = faqData.slice(midPoint);
 
   // 3. Helper function to handle clicks from either side
-  const handleSelect = (eventKey: string | null | undefined) => {
-    // React Bootstrap might pass undefined in some edge cases, cast to string|null
-    setActiveKey(eventKey as string | null);
+  const handleSelect = (eventKey: string | string[] | null | undefined) => {
+    // Convert string array to string if needed, or handle null/undefined
+    if (Array.isArray(eventKey)) {
+      setActiveKey(eventKey[0] || null);
+    } else {
+      setActiveKey(eventKey || null);
+    }
   };
 
   const renderAccordionItem = (item: FAQItem) => (
