@@ -1,0 +1,110 @@
+.hiw-section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.hiw-inner {
+    position: relative;
+}
+
+.hiw-root {
+    padding: 48px 0 72px;
+    margin: 0 auto;
+    max-width: 1076px;
+    width: 100%;
+    display: grid;
+    row-gap: 72px;
+}
+
+.hiw-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hiw-row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 372px 1fr;
+    width: 100%;
+    gap: 56px;
+
+    .hiw-number {
+        position: relative;
+
+        .number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 1;
+            background-color: #40436D;
+        }
+
+        &::before {
+            content: "";
+            border-top: 2px solid #ECECF0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: calc(100% - 56px);
+        }
+    }
+
+    .hiw-text {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 8px;
+
+        .hiw-text-span {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            color: #573F3F;
+            padding: 2px 12px;
+            border-radius: 20px;
+            background-color: #E9CECE;
+            min-height: 24px;
+        }
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+    .hiw-desc {
+        p {
+            font-weight: 500;
+            color: var(--darkColor);
+        }
+    }
+
+    .hiw-col1 {
+        display: grid;
+        gap: 32px;
+    }
+
+    .hiw-col2 {
+        background-color: #f9f4f0;
+        border-radius: 20px;
+        position: relative;
+        max-width: 372px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hiw-col3 {
+        position: relative;
+    }
+}
